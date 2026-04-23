@@ -104,17 +104,6 @@ Tasks perform physiological data validation before forwarding readings downstrea
 
 ---
 
-## Security Layer
-
-Sensor data feeds into a secured MQTT pipeline. Security measures applied:
-
-- **Mutual TLS 1.3** — device and server authenticate each other using mbedTLS
-- **HMAC-SHA256** — message-level integrity authentication on all outgoing payloads
-- **STRIDE threat modelling** — threat analysis performed at the firmware architecture level
-- **IEC 62443 mapping** — engineering decisions mapped to relevant IEC 62443 security requirements
-- **GDPR Article 32 alignment** — data handling reviewed against appropriate technical safeguards for health data
-
----
 
 ## Build & Flash
 
@@ -144,7 +133,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ## Skills Demonstrated
 
-`ESP32` · `Bare-metal Firmware` · `I2C` · `1-Wire` · `FreeRTOS` · `mbedTLS` · `TLS 1.3` · `HMAC-SHA256` · `STRIDE` · `IEC 62443` · `C` · `CMake` · `Embedded Security`
+`ESP32` · `Bare-metal Firmware` · `I2C` · `1-Wire` · `FreeRTOS` · `IEC 62443` · `C` · `CMake`
 
 ---
 
